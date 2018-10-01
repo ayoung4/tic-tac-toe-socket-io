@@ -4,23 +4,35 @@
   "description": "A realtime online multiplayer game.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "nodemon server.js",
+    "watch": "webpack --watch"
   },
   "author": "Ayush Gupta",
   "license": "ISC",
   "dependencies": {
+    "awesome-typescript-loader": "^3.4.1",
     "body-parser": "^1.15.2",
     "eslint-plugin-import": "^2.7.0",
     "express": "^4.14.0",
+    "http": "0.0.0",
     "jquery": "^3.1.1",
+    "path": "^0.12.7",
+    "shortid": "^2.2.13",
     "skeleton": "^0.1.2",
     "skeleton-css": "^2.0.4",
-    "socket.io": "^1.7.1"
+    "socket.io": "^1.7.1",
+    "socket.io-client": "^2.1.1"
   },
   "devDependencies": {
+    "@types/node": "^10.11.3",
+    "@types/socket.io": "^1.4.38",
+    "@types/socket.io-client": "^1.4.32",
     "eslint": "^4.6.1",
     "eslint-config-airbnb-base": "^12.0.0",
-    "eslint-plugin-import": "^2.7.0"
+    "eslint-plugin-import": "^2.7.0",
+    "nodemon": "^1.18.4",
+    "typescript": "^3.1.1",
+    "webpack": "^3.10.0",
+    "webpack-node-externals": "^1.7.2"
   }
 }
